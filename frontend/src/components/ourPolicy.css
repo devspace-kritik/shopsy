@@ -1,0 +1,33 @@
+.policyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    text-align: center;
+    padding: 5rem 0;
+    font-size: 0.75rem;
+    color: #374151;
+}
+@media (min-width: 640px) {
+    .policyContainer{
+        flex-direction: row;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+@media (min-width: 768px) {
+    .policyContainer{
+        font-size: 1rem;
+    }
+}
+.exchangeImage{
+    width: 3rem;
+    margin: auto;
+    margin-bottom: 1.25rem;
+}
+.exchangeText{
+    font-weight: 600;
+}
+.exchnagePara{
+    color: #9CA3AF;
+}
