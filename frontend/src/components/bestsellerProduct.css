@@ -1,0 +1,48 @@
+.bestsellerContainer{
+    margin: 1.5rem 0;
+}
+.bestsellerChild{
+    text-align: center;
+    font-size: 1.875rem;
+    padding: 2rem 0;
+}
+.bestsellerHeading{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #1f2937;
+
+}
+@media (min-width: 640px) {
+    .bestsellerHeading{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+@media (min-width: 768px) {
+    .bestsellerHeading{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+.bestsellerList{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
+}
+@media (min-width:640px) {
+    .bestsellerList{
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+}
+@media (min-width:768px) {
+    .bestsellerList{
+        grid-template-columns: repeat(4, minmax(0,1fr));
+    }
+}
+@media (min-width:1024px) {
+    .bestsellerList{
+        grid-template-columns: repeat(5, minmax(0,1fr));
+    }
+}
