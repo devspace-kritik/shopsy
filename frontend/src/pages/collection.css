@@ -1,0 +1,114 @@
+.collectionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+@media (min-width:640px) {
+    .collectionContainer{
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+}
+.filterContainer{
+    min-width: 15rem;
+}
+.filterHeading{
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+.categoryContainer{
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem 0 0.75rem 1.25rem;
+    margin-top: 1.5rem;
+}
+.hideFilter{
+    display: none;
+}
+@media (min-width:640px) {
+    .categoryContainer{
+        display: block;
+    }
+}
+.categoriesHeader{
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.categoriesList{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #4a5568;
+}
+.categoryItem{
+    display: flex;
+    gap: 0.5rem;
+}
+.categoryInput{
+    width: 0.75rem;
+}
+.typeContainer{
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem 0 0.75rem 1.25rem;
+    margin-top: 1.5rem;
+}
+@media (min-width:640px) {
+    .typeContainer{
+        display: block;
+    }
+}
+.filterDropdownIcon{
+    height: 0.75rem;
+}
+@media (min-width:640px) {
+    .filterDropdownIcon{
+        display: none;
+    }
+}
+.rotateIcon{
+    transform: rotate(90deg);
+}
+.collectionRightContainer{
+    flex: 1 1 0;
+}
+.colectionRigntChildContainer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+@media (min-width:640px) {
+    .colectionRigntChildContainer{
+        font-size: 1.5rem;
+    }
+}
+.collectionDropdown{
+    border: 2px solid #e5e7eb;
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+}
+.collectionGrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1.5rem;
+}
+@media (min-width:768px) {
+    .collectionGrid{
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width:1024px) {
+    .collectionGrid{
+         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
