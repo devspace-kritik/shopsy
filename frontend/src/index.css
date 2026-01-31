@@ -6,6 +6,9 @@
     box-sizing: border-box; 
     font-family: "Outfit", sans-serif;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .prata-regular {
   font-family: "Prata", serif;
   font-weight: 400;

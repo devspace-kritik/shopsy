@@ -1,0 +1,21 @@
+.CTContainer{
+    width: 100%;
+}
+.CTHeading{
+    font-size: 1.5rem;
+}
+.CTItemParent{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+.CTSubtotal1{
+    display: flex;
+    justify-content: space-between;
+}
+.CTSubtotal2{
+    display: flex;
+    justify-content: space-between;
+}

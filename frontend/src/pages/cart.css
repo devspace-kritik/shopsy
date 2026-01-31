@@ -1,0 +1,110 @@
+.cartItemContainer{
+    border-top: 1px solid #e5e7eb;
+    padding-top: 3.5rem;
+}
+.cartChildContainer{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 0.75rem;
+}
+.cartCard{
+    padding: 1rem 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4a5568;
+    display: grid;
+    grid-template-columns: 4fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 1rem;
+}
+@media (min-width:640px) {
+    .cartCard{
+        grid-template-columns: 4fr 2fr 0.5fr;
+    }
+}
+.cartImageCard{
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+}
+.cartItemImage{
+    width: 4rem;
+}
+@media (min-width:640px) {
+    .cartItemImage{
+        width: 5rem;
+    }
+}
+.cartProductName{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+}
+@media (min-width:640px) {
+    .cartProductName{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+.cartPriceParent{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
+}
+.cartItemSize{
+    padding: 0 0.5rem;
+    border: 1px solid #e5e7eb;
+    background-color: #f8fafc;
+}
+@media (min-width:640px) {
+    .cartItemSize{
+        padding: 0.25rem 0.75rem;
+    }
+}
+.cartItemQuantity{
+    border: 1px solid #e5e7eb;
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+@media (min-width:640px) {
+    .cartItemQuantity{
+        max-width: 5rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+.binIcon{
+    width: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+@media (min-width:640px) {
+    .binIcon{
+       width: 1.25rem;
+    }
+}
+.displayTotalParent{
+    display: flex;
+    justify-content: end;
+    margin: 5rem 0;
+}
+.displayTotalChild{
+    width: 100%;
+}
+@media (min-width:640px) {
+    .displayTotalChild{
+       width: 450px;
+    }
+}
+.paymentButtonContainer{
+    width: 100%;
+    text-align: end;
+}
+.paymentButton{
+    background-color: black;
+    color: white;
+    margin: 2rem 0; 
+    padding: 0.75rem 2rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}

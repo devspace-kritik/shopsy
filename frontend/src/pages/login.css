@@ -1,0 +1,58 @@
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 3.25rem;
+    gap: 1rem;
+    color: #1f2937;
+}
+@media (min-width:640px) {
+    .loginContainer{
+        max-width: 24rem;
+    }
+}
+.loginChildContainer{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.lsSignUpText{
+    font-size: 1.875rem;
+}
+.lsLine{
+    border: none;
+    height: 1.5px;
+    width: 2rem;
+    background-color: #1f2937;
+}
+.lsNameInput{
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #1f2937;
+
+}
+.lsForgotPass{
+    cursor: pointer;
+}
+.lsCreateAccountText{
+    cursor: pointer;
+}
+.forgotPassParent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-top: -8px;
+}
+.lsLoginButton{
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+
+}

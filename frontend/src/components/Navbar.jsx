@@ -8,7 +8,7 @@ import { ShopContext } from '@/context/ShopContext'
 const Navbar = () => {
 
   const [visible, setVisible] = useState(false);
-  const {setShowSearch} = useContext(ShopContext);
+  const {setShowSearch, getCartCount} = useContext(ShopContext);
 
   return (
     <div className='navbarContainer'>
@@ -35,7 +35,9 @@ const Navbar = () => {
         <div className='rightItemsContainer'>
           <img onClick={()=>setShowSearch(true)} src={assets.search_icon} className='searchIcon' alt="Search" />
           <div className="profileContainer">
-            <img src={assets.profile_icon} className='profileIcon' alt="Profile" />
+           <Link to={"/login"}>
+           <img src={assets.profile_icon} className='profileIcon' alt="Profile" />
+           </Link>
             <div className='profileDropdownContainer'>
               <div className="dropdownChild">
                 <p className='dropdownText'>My Profile</p>
@@ -44,9 +46,9 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <Link to={"/"} className='cartContainer'>
+          <Link to={"/cart"} className='cartContainer'>
               <img src={assets.cart_icon} className='cartIcon' alt="Cart" />
-              <p className='cartItemCount'>10</p>
+              <p className='cartItemCount'>{getCartCount()}</p>
           </Link>
           <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='menuIcon' alt="Menu Icon" />
         </div>

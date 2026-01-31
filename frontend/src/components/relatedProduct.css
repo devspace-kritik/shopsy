@@ -1,0 +1,33 @@
+.relatedProductContainer{
+    margin: 6rem 0;
+}
+.rpHeader{
+    text-align: center;
+    /* font-size: 1.875rem; */
+    padding: 0.5rem 0;
+}
+.rpHeader > * {
+    font-size: 1.875rem; 
+}
+.rpGrid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    row-gap: 1.5rem;
+    font-size: 1rem;
+}
+@media (min-width:640px) {
+    .rpGrid{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width:768px) {
+    .rpGrid{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media (min-width:1024px) {
+    .rpGrid{
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
